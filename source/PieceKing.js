@@ -54,7 +54,7 @@ define(["prototypes",
 
                                 var pieceMatrix = arrayMatrix[iXMove][iYMove];
 
-                                if (pieceMatrix && self.white !== pieceMatrix.white) {
+                                if ((!pieceMatrix) || (pieceMatrix && self.white !== pieceMatrix.white)) {
 
                                     arrayMoves.push({
 
